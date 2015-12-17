@@ -1,0 +1,667 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		220D31CF1B97A871009675DA /* CouponDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220D31CE1B97A871009675DA /* CouponDetailViewController.swift */; };
+		222A7D821B5B7FDF008989F6 /* GroceryItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222A7D811B5B7FDF008989F6 /* GroceryItemCell.swift */; };
+		222A7D841B5B803C008989F6 /* GroceryItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222A7D831B5B803C008989F6 /* GroceryItemViewController.swift */; };
+		222A7D861B5F7BFB008989F6 /* GroceryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222A7D851B5F7BFB008989F6 /* GroceryData.swift */; };
+		22376DD51B70B1F8008FF42C /* CouponCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22376DD41B70B1F8008FF42C /* CouponCell.swift */; };
+		2242E6881B6B5114009E68BC /* GroceryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2242E6871B6B5114009E68BC /* GroceryItem.swift */; };
+		2258BEF91B60B802006F2EA8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2258BEF81B60B802006F2EA8 /* MainViewController.swift */; };
+		2285A07E1B76EC070048D3BB /* CouponItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2285A07D1B76EC070048D3BB /* CouponItemViewController.swift */; };
+		2285A0801B76F2C60048D3BB /* CouponItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2285A07F1B76F2C60048D3BB /* CouponItem.swift */; };
+		2285A0821B7701D40048D3BB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2285A0811B7701D40048D3BB /* SearchViewController.swift */; };
+		22E138CC1B4D04B50044C295 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E138CB1B4D04B50044C295 /* AppDelegate.swift */; };
+		22E138CF1B4D04B50044C295 /* GroceryApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22E138CD1B4D04B50044C295 /* GroceryApp.xcdatamodeld */; };
+		22E138D41B4D04B50044C295 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E138D21B4D04B50044C295 /* Main.storyboard */; };
+		22E138D91B4D04B50044C295 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22E138D71B4D04B50044C295 /* LaunchScreen.xib */; };
+		22E138E51B4D04B60044C295 /* GroceryAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E138E41B4D04B60044C295 /* GroceryAppTests.swift */; };
+		8426A9251B6EA35F009F2050 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8426A9241B6EA35F009F2050 /* Accounts.framework */; };
+		8426A9271B6EA366009F2050 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8426A9261B6EA366009F2050 /* AudioToolbox.framework */; };
+		8426A9291B6EA375009F2050 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8426A9281B6EA375009F2050 /* CoreGraphics.framework */; };
+		8426A92B1B6EA37D009F2050 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8426A92A1B6EA37D009F2050 /* CoreLocation.framework */; };
+		8426A92D1B6EA387009F2050 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8426A92C1B6EA387009F2050 /* CFNetwork.framework */; };
+		8426A92F1B6EA3A6009F2050 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8426A92E1B6EA3A6009F2050 /* libsqlite3.dylib */; };
+		8426A9311B6EA3B6009F2050 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8426A9301B6EA3B6009F2050 /* libz.1.1.3.dylib */; };
+		8426A9331B6EA3C4009F2050 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8426A9321B6EA3C4009F2050 /* MobileCoreServices.framework */; };
+		8426A9351B6EA3CD009F2050 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8426A9341B6EA3CD009F2050 /* QuartzCore.framework */; };
+		8426A9371B6EA3D8009F2050 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8426A9361B6EA3D8009F2050 /* Security.framework */; };
+		8426A9391B6EA3E3009F2050 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8426A9381B6EA3E3009F2050 /* Social.framework */; };
+		8426A93B1B6EA3EF009F2050 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8426A93A1B6EA3EF009F2050 /* UIKit.framework */; };
+		8426A93D1B6EA3FA009F2050 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8426A93C1B6EA3FA009F2050 /* StoreKit.framework */; };
+		8426A93F1B6EA406009F2050 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8426A93E1B6EA406009F2050 /* SystemConfiguration.framework */; };
+		8426A9411B6EA40F009F2050 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8426A9401B6EA40F009F2050 /* Foundation.framework */; };
+		843CDE011C016C0800EB9705 /* RecipeItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843CDE001C016C0800EB9705 /* RecipeItemViewController.swift */; };
+		843F48101C0D454900542ECA /* IngredientItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843F480F1C0D454900542ECA /* IngredientItem.swift */; };
+		843F48121C0D4E9600542ECA /* RecipeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843F48111C0D4E9600542ECA /* RecipeData.swift */; };
+		843F48141C0E0B1700542ECA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843F48131C0E0B1700542ECA /* Images.xcassets */; };
+		843F48181C0E17E400542ECA /* RecipePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843F48171C0E17E400542ECA /* RecipePageViewController.swift */; };
+		849281BB1BFD5821009703F5 /* RecipeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849281BA1BFD5821009703F5 /* RecipeItem.swift */; };
+		849281BD1BFD63AD009703F5 /* RecipeItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849281BC1BFD63AD009703F5 /* RecipeItemCell.swift */; };
+		84AF0F331BE19276004794EC /* ShoppingListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AF0F321BE19276004794EC /* ShoppingListController.swift */; };
+		84AF0F351BE2F4EC004794EC /* MyStoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AF0F341BE2F4EC004794EC /* MyStoreTableViewController.swift */; };
+		84D5EB1B1B9AA7F400AFCE4D /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5EB1A1B9AA7F400AFCE4D /* LoginPage.swift */; };
+		84D5EB1D1B9ABEA900AFCE4D /* MyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5EB1C1B9ABEA900AFCE4D /* MyStore.swift */; };
+		84EAF5641B86819D00AE5419 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EAF55F1B86819D00AE5419 /* Bolts.framework */; };
+		84EAF5651B86819D00AE5419 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EAF5601B86819D00AE5419 /* Parse.framework */; };
+		84EAF5661B86819D00AE5419 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EAF5611B86819D00AE5419 /* ParseCrashReporting.framework */; };
+		84EAF5671B86819D00AE5419 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EAF5621B86819D00AE5419 /* ParseFacebookUtils.framework */; };
+		84EAF5681B86819D00AE5419 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EAF5631B86819D00AE5419 /* ParseFacebookUtilsV4.framework */; };
+		C1B647681B98C3D20005B668 /* StoreMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B647671B98C3D20005B668 /* StoreMapViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22E138DF1B4D04B60044C295 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22E138BE1B4D04B50044C295 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22E138C51B4D04B50044C295;
+			remoteInfo = GroceryApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		220D31CE1B97A871009675DA /* CouponDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CouponDetailViewController.swift; path = ../CouponDetailViewController.swift; sourceTree = "<group>"; };
+		222A7D811B5B7FDF008989F6 /* GroceryItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GroceryItemCell.swift; path = ../GroceryItemCell.swift; sourceTree = "<group>"; };
+		222A7D831B5B803C008989F6 /* GroceryItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GroceryItemViewController.swift; path = ../GroceryItemViewController.swift; sourceTree = "<group>"; };
+		222A7D851B5F7BFB008989F6 /* GroceryData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GroceryData.swift; path = ../GroceryData.swift; sourceTree = "<group>"; };
+		22376DD41B70B1F8008FF42C /* CouponCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CouponCell.swift; path = ../CouponCell.swift; sourceTree = "<group>"; };
+		2242E6871B6B5114009E68BC /* GroceryItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GroceryItem.swift; path = ../GroceryItem.swift; sourceTree = "<group>"; };
+		2258BEF81B60B802006F2EA8 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ../MainViewController.swift; sourceTree = "<group>"; };
+		2285A07D1B76EC070048D3BB /* CouponItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CouponItemViewController.swift; path = ../CouponItemViewController.swift; sourceTree = "<group>"; };
+		2285A07F1B76F2C60048D3BB /* CouponItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CouponItem.swift; path = ../CouponItem.swift; sourceTree = "<group>"; };
+		2285A0811B7701D40048D3BB /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = ../SearchViewController.swift; sourceTree = "<group>"; };
+		22E138C61B4D04B50044C295 /* GroceryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroceryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22E138CA1B4D04B50044C295 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22E138CB1B4D04B50044C295 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		22E138CE1B4D04B50044C295 /* GroceryApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GroceryApp.xcdatamodel; sourceTree = "<group>"; };
+		22E138D31B4D04B50044C295 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		22E138D81B4D04B50044C295 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		22E138DE1B4D04B60044C295 /* GroceryAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GroceryAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22E138E31B4D04B60044C295 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22E138E41B4D04B60044C295 /* GroceryAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryAppTests.swift; sourceTree = "<group>"; };
+		8426A91D1B6C9087009F2050 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = "../../Downloads/parse-starter-project-1.7.5/ParseSwiftStarterProject/ParseUI.framework"; sourceTree = "<group>"; };
+		8426A9241B6EA35F009F2050 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		8426A9261B6EA366009F2050 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		8426A9281B6EA375009F2050 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8426A92A1B6EA37D009F2050 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		8426A92C1B6EA387009F2050 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		8426A92E1B6EA3A6009F2050 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		8426A9301B6EA3B6009F2050 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		8426A9321B6EA3C4009F2050 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		8426A9341B6EA3CD009F2050 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8426A9361B6EA3D8009F2050 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		8426A9381B6EA3E3009F2050 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		8426A93A1B6EA3EF009F2050 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8426A93C1B6EA3FA009F2050 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		8426A93E1B6EA406009F2050 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8426A9401B6EA40F009F2050 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		843CDE001C016C0800EB9705 /* RecipeItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeItemViewController.swift; sourceTree = "<group>"; };
+		843F480F1C0D454900542ECA /* IngredientItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientItem.swift; sourceTree = "<group>"; };
+		843F48111C0D4E9600542ECA /* RecipeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeData.swift; sourceTree = "<group>"; };
+		843F48131C0E0B1700542ECA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		843F48171C0E17E400542ECA /* RecipePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipePageViewController.swift; sourceTree = "<group>"; };
+		849281BA1BFD5821009703F5 /* RecipeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeItem.swift; sourceTree = "<group>"; };
+		849281BC1BFD63AD009703F5 /* RecipeItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeItemCell.swift; sourceTree = "<group>"; };
+		84AF0F321BE19276004794EC /* ShoppingListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListController.swift; sourceTree = "<group>"; };
+		84AF0F341BE2F4EC004794EC /* MyStoreTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStoreTableViewController.swift; sourceTree = "<group>"; };
+		84D5EB1A1B9AA7F400AFCE4D /* LoginPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
+		84D5EB1C1B9ABEA900AFCE4D /* MyStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStore.swift; sourceTree = "<group>"; };
+		84EAF55F1B86819D00AE5419 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		84EAF5601B86819D00AE5419 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		84EAF5611B86819D00AE5419 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		84EAF5621B86819D00AE5419 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		84EAF5631B86819D00AE5419 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		C1B647671B98C3D20005B668 /* StoreMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreMapViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22E138C31B4D04B50044C295 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84EAF5641B86819D00AE5419 /* Bolts.framework in Frameworks */,
+				84EAF5651B86819D00AE5419 /* Parse.framework in Frameworks */,
+				84EAF5661B86819D00AE5419 /* ParseCrashReporting.framework in Frameworks */,
+				84EAF5671B86819D00AE5419 /* ParseFacebookUtils.framework in Frameworks */,
+				84EAF5681B86819D00AE5419 /* ParseFacebookUtilsV4.framework in Frameworks */,
+				8426A9411B6EA40F009F2050 /* Foundation.framework in Frameworks */,
+				8426A93F1B6EA406009F2050 /* SystemConfiguration.framework in Frameworks */,
+				8426A93D1B6EA3FA009F2050 /* StoreKit.framework in Frameworks */,
+				8426A93B1B6EA3EF009F2050 /* UIKit.framework in Frameworks */,
+				8426A9391B6EA3E3009F2050 /* Social.framework in Frameworks */,
+				8426A9371B6EA3D8009F2050 /* Security.framework in Frameworks */,
+				8426A9351B6EA3CD009F2050 /* QuartzCore.framework in Frameworks */,
+				8426A9331B6EA3C4009F2050 /* MobileCoreServices.framework in Frameworks */,
+				8426A9311B6EA3B6009F2050 /* libz.1.1.3.dylib in Frameworks */,
+				8426A92F1B6EA3A6009F2050 /* libsqlite3.dylib in Frameworks */,
+				8426A92D1B6EA387009F2050 /* CFNetwork.framework in Frameworks */,
+				8426A92B1B6EA37D009F2050 /* CoreLocation.framework in Frameworks */,
+				8426A9291B6EA375009F2050 /* CoreGraphics.framework in Frameworks */,
+				8426A9271B6EA366009F2050 /* AudioToolbox.framework in Frameworks */,
+				8426A9251B6EA35F009F2050 /* Accounts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22E138DB1B4D04B60044C295 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22E138BD1B4D04B50044C295 = {
+			isa = PBXGroup;
+			children = (
+				8426A9441B6EA800009F2050 /* Frameworks */,
+				22E138C81B4D04B50044C295 /* GroceryApp */,
+				22E138E11B4D04B60044C295 /* GroceryAppTests */,
+				22E138C71B4D04B50044C295 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		22E138C71B4D04B50044C295 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22E138C61B4D04B50044C295 /* GroceryApp.app */,
+				22E138DE1B4D04B60044C295 /* GroceryAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22E138C81B4D04B50044C295 /* GroceryApp */ = {
+			isa = PBXGroup;
+			children = (
+				849281B91BFD57AC009703F5 /* Recipes */,
+				84AF0F371BE2FF03004794EC /* Coupons */,
+				84AF0F361BE2FECB004794EC /* Specials */,
+				84AF0F321BE19276004794EC /* ShoppingListController.swift */,
+				2285A0811B7701D40048D3BB /* SearchViewController.swift */,
+				C1B647671B98C3D20005B668 /* StoreMapViewController.swift */,
+				22E138CB1B4D04B50044C295 /* AppDelegate.swift */,
+				22E138D21B4D04B50044C295 /* Main.storyboard */,
+				2258BEF81B60B802006F2EA8 /* MainViewController.swift */,
+				84D5EB1C1B9ABEA900AFCE4D /* MyStore.swift */,
+				843F48131C0E0B1700542ECA /* Images.xcassets */,
+				84AF0F341BE2F4EC004794EC /* MyStoreTableViewController.swift */,
+				84D5EB1A1B9AA7F400AFCE4D /* LoginPage.swift */,
+				22E138D71B4D04B50044C295 /* LaunchScreen.xib */,
+				22E138CD1B4D04B50044C295 /* GroceryApp.xcdatamodeld */,
+				22E138C91B4D04B50044C295 /* Supporting Files */,
+			);
+			path = GroceryApp;
+			sourceTree = "<group>";
+		};
+		22E138C91B4D04B50044C295 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				22E138CA1B4D04B50044C295 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22E138E11B4D04B60044C295 /* GroceryAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				22E138E41B4D04B60044C295 /* GroceryAppTests.swift */,
+				22E138E21B4D04B60044C295 /* Supporting Files */,
+			);
+			path = GroceryAppTests;
+			sourceTree = "<group>";
+		};
+		22E138E21B4D04B60044C295 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				22E138E31B4D04B60044C295 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8426A9441B6EA800009F2050 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84EAF55F1B86819D00AE5419 /* Bolts.framework */,
+				84EAF5601B86819D00AE5419 /* Parse.framework */,
+				84EAF5611B86819D00AE5419 /* ParseCrashReporting.framework */,
+				84EAF5621B86819D00AE5419 /* ParseFacebookUtils.framework */,
+				84EAF5631B86819D00AE5419 /* ParseFacebookUtilsV4.framework */,
+				8426A9401B6EA40F009F2050 /* Foundation.framework */,
+				8426A93E1B6EA406009F2050 /* SystemConfiguration.framework */,
+				8426A93C1B6EA3FA009F2050 /* StoreKit.framework */,
+				8426A93A1B6EA3EF009F2050 /* UIKit.framework */,
+				8426A9381B6EA3E3009F2050 /* Social.framework */,
+				8426A9361B6EA3D8009F2050 /* Security.framework */,
+				8426A9341B6EA3CD009F2050 /* QuartzCore.framework */,
+				8426A9321B6EA3C4009F2050 /* MobileCoreServices.framework */,
+				8426A9301B6EA3B6009F2050 /* libz.1.1.3.dylib */,
+				8426A92E1B6EA3A6009F2050 /* libsqlite3.dylib */,
+				8426A92C1B6EA387009F2050 /* CFNetwork.framework */,
+				8426A92A1B6EA37D009F2050 /* CoreLocation.framework */,
+				8426A9281B6EA375009F2050 /* CoreGraphics.framework */,
+				8426A9261B6EA366009F2050 /* AudioToolbox.framework */,
+				8426A9241B6EA35F009F2050 /* Accounts.framework */,
+				8426A91D1B6C9087009F2050 /* ParseUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		849281B91BFD57AC009703F5 /* Recipes */ = {
+			isa = PBXGroup;
+			children = (
+				849281BA1BFD5821009703F5 /* RecipeItem.swift */,
+				849281BC1BFD63AD009703F5 /* RecipeItemCell.swift */,
+				843CDE001C016C0800EB9705 /* RecipeItemViewController.swift */,
+				843F480F1C0D454900542ECA /* IngredientItem.swift */,
+				843F48111C0D4E9600542ECA /* RecipeData.swift */,
+				843F48171C0E17E400542ECA /* RecipePageViewController.swift */,
+			);
+			name = Recipes;
+			sourceTree = "<group>";
+		};
+		84AF0F361BE2FECB004794EC /* Specials */ = {
+			isa = PBXGroup;
+			children = (
+				222A7D851B5F7BFB008989F6 /* GroceryData.swift */,
+				2242E6871B6B5114009E68BC /* GroceryItem.swift */,
+				222A7D831B5B803C008989F6 /* GroceryItemViewController.swift */,
+				222A7D811B5B7FDF008989F6 /* GroceryItemCell.swift */,
+			);
+			name = Specials;
+			sourceTree = "<group>";
+		};
+		84AF0F371BE2FF03004794EC /* Coupons */ = {
+			isa = PBXGroup;
+			children = (
+				2285A07F1B76F2C60048D3BB /* CouponItem.swift */,
+				2285A07D1B76EC070048D3BB /* CouponItemViewController.swift */,
+				220D31CE1B97A871009675DA /* CouponDetailViewController.swift */,
+				22376DD41B70B1F8008FF42C /* CouponCell.swift */,
+			);
+			name = Coupons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22E138C51B4D04B50044C295 /* GroceryApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22E138E81B4D04B60044C295 /* Build configuration list for PBXNativeTarget "GroceryApp" */;
+			buildPhases = (
+				22E138C21B4D04B50044C295 /* Sources */,
+				22E138C31B4D04B50044C295 /* Frameworks */,
+				22E138C41B4D04B50044C295 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GroceryApp;
+			productName = GroceryApp;
+			productReference = 22E138C61B4D04B50044C295 /* GroceryApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		22E138DD1B4D04B60044C295 /* GroceryAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22E138EB1B4D04B60044C295 /* Build configuration list for PBXNativeTarget "GroceryAppTests" */;
+			buildPhases = (
+				22E138DA1B4D04B60044C295 /* Sources */,
+				22E138DB1B4D04B60044C295 /* Frameworks */,
+				22E138DC1B4D04B60044C295 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22E138E01B4D04B60044C295 /* PBXTargetDependency */,
+			);
+			name = GroceryAppTests;
+			productName = GroceryAppTests;
+			productReference = 22E138DE1B4D04B60044C295 /* GroceryAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22E138BE1B4D04B50044C295 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Madkatz;
+				TargetAttributes = {
+					22E138C51B4D04B50044C295 = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 3CJJ2BJKAF;
+					};
+					22E138DD1B4D04B60044C295 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 22E138C51B4D04B50044C295;
+					};
+				};
+			};
+			buildConfigurationList = 22E138C11B4D04B50044C295 /* Build configuration list for PBXProject "GroceryApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22E138BD1B4D04B50044C295;
+			productRefGroup = 22E138C71B4D04B50044C295 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22E138C51B4D04B50044C295 /* GroceryApp */,
+				22E138DD1B4D04B60044C295 /* GroceryAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22E138C41B4D04B50044C295 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				843F48141C0E0B1700542ECA /* Images.xcassets in Resources */,
+				22E138D41B4D04B50044C295 /* Main.storyboard in Resources */,
+				22E138D91B4D04B50044C295 /* LaunchScreen.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22E138DC1B4D04B60044C295 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22E138C21B4D04B50044C295 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2285A07E1B76EC070048D3BB /* CouponItemViewController.swift in Sources */,
+				22E138CC1B4D04B50044C295 /* AppDelegate.swift in Sources */,
+				843F48101C0D454900542ECA /* IngredientItem.swift in Sources */,
+				849281BB1BFD5821009703F5 /* RecipeItem.swift in Sources */,
+				843CDE011C016C0800EB9705 /* RecipeItemViewController.swift in Sources */,
+				2285A0801B76F2C60048D3BB /* CouponItem.swift in Sources */,
+				84AF0F331BE19276004794EC /* ShoppingListController.swift in Sources */,
+				220D31CF1B97A871009675DA /* CouponDetailViewController.swift in Sources */,
+				84AF0F351BE2F4EC004794EC /* MyStoreTableViewController.swift in Sources */,
+				222A7D821B5B7FDF008989F6 /* GroceryItemCell.swift in Sources */,
+				843F48181C0E17E400542ECA /* RecipePageViewController.swift in Sources */,
+				22376DD51B70B1F8008FF42C /* CouponCell.swift in Sources */,
+				849281BD1BFD63AD009703F5 /* RecipeItemCell.swift in Sources */,
+				222A7D861B5F7BFB008989F6 /* GroceryData.swift in Sources */,
+				2285A0821B7701D40048D3BB /* SearchViewController.swift in Sources */,
+				2258BEF91B60B802006F2EA8 /* MainViewController.swift in Sources */,
+				22E138CF1B4D04B50044C295 /* GroceryApp.xcdatamodeld in Sources */,
+				84D5EB1D1B9ABEA900AFCE4D /* MyStore.swift in Sources */,
+				C1B647681B98C3D20005B668 /* StoreMapViewController.swift in Sources */,
+				2242E6881B6B5114009E68BC /* GroceryItem.swift in Sources */,
+				843F48121C0D4E9600542ECA /* RecipeData.swift in Sources */,
+				84D5EB1B1B9AA7F400AFCE4D /* LoginPage.swift in Sources */,
+				222A7D841B5B803C008989F6 /* GroceryItemViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22E138DA1B4D04B60044C295 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22E138E51B4D04B60044C295 /* GroceryAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22E138E01B4D04B60044C295 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22E138C51B4D04B50044C295 /* GroceryApp */;
+			targetProxy = 22E138DF1B4D04B60044C295 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		22E138D21B4D04B50044C295 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22E138D31B4D04B50044C295 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		22E138D71B4D04B50044C295 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22E138D81B4D04B50044C295 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		22E138E61B4D04B60044C295 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		22E138E71B4D04B60044C295 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22E138E91B4D04B60044C295 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Bowman/Downloads/parse-starter-project-1.7.5/ParseSwiftStarterProject",
+					"/Users/chrislarkin/Downloads/parse-library-1",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = GroceryApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.goat.goatTester;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		22E138EA1B4D04B60044C295 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Bowman/Downloads/parse-starter-project-1.7.5/ParseSwiftStarterProject",
+					"/Users/chrislarkin/Downloads/parse-library-1",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = GroceryApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.goat.goatTester;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		22E138EC1B4D04B60044C295 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GroceryAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Madkatz.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GroceryApp.app/GroceryApp";
+			};
+			name = Debug;
+		};
+		22E138ED1B4D04B60044C295 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GroceryAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Madkatz.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GroceryApp.app/GroceryApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22E138C11B4D04B50044C295 /* Build configuration list for PBXProject "GroceryApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22E138E61B4D04B60044C295 /* Debug */,
+				22E138E71B4D04B60044C295 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22E138E81B4D04B60044C295 /* Build configuration list for PBXNativeTarget "GroceryApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22E138E91B4D04B60044C295 /* Debug */,
+				22E138EA1B4D04B60044C295 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22E138EB1B4D04B60044C295 /* Build configuration list for PBXNativeTarget "GroceryAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22E138EC1B4D04B60044C295 /* Debug */,
+				22E138ED1B4D04B60044C295 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		22E138CD1B4D04B50044C295 /* GroceryApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				22E138CE1B4D04B50044C295 /* GroceryApp.xcdatamodel */,
+			);
+			currentVersion = 22E138CE1B4D04B50044C295 /* GroceryApp.xcdatamodel */;
+			path = GroceryApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 22E138BE1B4D04B50044C295 /* Project object */;
+}
